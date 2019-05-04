@@ -14,7 +14,7 @@
 		1824FE0E227D764A009C4F16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1824FE0C227D764A009C4F16 /* LaunchScreen.storyboard */; };
 		1824FE19227D764A009C4F16 /* HappyClearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824FE18227D764A009C4F16 /* HappyClearTests.swift */; };
 		1824FE30227D7670009C4F16 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824FE25227D7670009C4F16 /* UIColor+Extension.swift */; };
-		1824FE31227D7670009C4F16 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824FE26227D7670009C4F16 /* Int+Extension.swift */; };
+		1824FE31227D7670009C4F16 /* Number+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824FE26227D7670009C4F16 /* Number+Extension.swift */; };
 		1824FE32227D7670009C4F16 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824FE27227D7670009C4F16 /* UIView+Extension.swift */; };
 		1824FE33227D7670009C4F16 /* TotalContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824FE29227D7670009C4F16 /* TotalContainer.swift */; };
 		1824FE34227D7670009C4F16 /* CanvasKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824FE2B227D7670009C4F16 /* CanvasKind.swift */; };
@@ -44,7 +44,7 @@
 		1824FE18227D764A009C4F16 /* HappyClearTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyClearTests.swift; sourceTree = "<group>"; };
 		1824FE1A227D764A009C4F16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1824FE25227D7670009C4F16 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		1824FE26227D7670009C4F16 /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		1824FE26227D7670009C4F16 /* Number+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Number+Extension.swift"; sourceTree = "<group>"; };
 		1824FE27227D7670009C4F16 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		1824FE29227D7670009C4F16 /* TotalContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalContainer.swift; sourceTree = "<group>"; };
 		1824FE2B227D7670009C4F16 /* CanvasKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasKind.swift; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				1824FE25227D7670009C4F16 /* UIColor+Extension.swift */,
-				1824FE26227D7670009C4F16 /* Int+Extension.swift */,
+				1824FE26227D7670009C4F16 /* Number+Extension.swift */,
 				1824FE27227D7670009C4F16 /* UIView+Extension.swift */,
 			);
 			path = Extension;
@@ -267,7 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1824FE30227D7670009C4F16 /* UIColor+Extension.swift in Sources */,
-				1824FE31227D7670009C4F16 /* Int+Extension.swift in Sources */,
+				1824FE31227D7670009C4F16 /* Number+Extension.swift in Sources */,
 				1824FE36227D7670009C4F16 /* CommonSize.swift in Sources */,
 				1824FE06227D764A009C4F16 /* ViewController.swift in Sources */,
 				1824FE34227D7670009C4F16 /* CanvasKind.swift in Sources */,

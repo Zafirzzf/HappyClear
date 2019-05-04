@@ -21,10 +21,10 @@ enum CanvasKind {
             for i in 0 ..< rows {
                 for j in 0 ..< rows {
                     if i.isZero && (j.isZero || j == rows.half || j == rows - 1) ||
-                        i > rows.half && (i - rows.half) >= (rows - (j - rows).abs) {
+                        i > rows.half && ((i - rows.half) >= (rows - j) || (i - rows.half) > j) {
                         continue
                     } else {
-                        points.append(CanvasPoint(i, j))
+                        points.append(CanvasPoint(j, i))
                     }
                     
                 }

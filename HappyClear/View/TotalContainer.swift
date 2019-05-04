@@ -12,6 +12,7 @@ class TotalContainer: UIView {
     required init?(coder aDecoder: NSCoder) { return nil }
     
     let canvasKind: CanvasKind
+    lazy var itemsPoint: [CGRect] = self.canvasKind.itemsPoint.frames
     
     init(kind: CanvasKind) {
         self.canvasKind = kind
@@ -24,6 +25,11 @@ class TotalContainer: UIView {
             let itemContainer = ItemContainer(frame: $0)
             addSubview(itemContainer)
         }
+        let maxX = itemsPoint.max { $0.origin.x < $1.origin.x }!.origin.x + itemSize
+        let maxY = itemsPoint.max { $0.origin.y < $1.origin.y }!.origin.y + itemSize
+        frame.size.width = maxX
+        frame.size.height = maxY
+        center = CGPoint(x: ScreenWidth.half, y: ScreenHeight.half)
     }
     
 }
@@ -34,9 +40,8 @@ class ItemContainer: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = UIColor.black.withAlphaComponent(0.5)
-        layer.cornerRadius = 5
-        layer.borderColor = UIColor("333366").cgColor
-        layer.borderWidth = 2
+        layer.borderColor = UIColor("333366").withAlphaComponent(0.5).cgColor
+        layer.borderWidth = 1
         layer.masksToBounds = true
     }
 }

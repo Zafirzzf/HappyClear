@@ -29,3 +29,9 @@ extension Int {
         return CGFloat(self)
     }
 }
+
+extension CGFloat {
+    var half: CGFloat {
+        return self / 2
+    }
+}
